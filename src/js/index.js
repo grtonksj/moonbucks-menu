@@ -53,8 +53,6 @@ function App(){
         addMenuName();
     });
 
-    $button.addEventListener('click', addMenuName);
-
     $list.addEventListener("click", e => {
         if(e.target.classList.contains('menu-edit-button')) updateMenuName(e);
         if(e.target.classList.contains('menu-remove-button')) removeItem(e);
